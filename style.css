@@ -58,23 +58,23 @@ main {
     font-family: 'Inter', sans-serif;
 }
 
-.bottom h1 {
+.bottom > h1 {
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     padding-left: 29px;
     padding-right: 29px;
-    font-size: 34px;
+    font-size: 2.1em;
 }
 
-.bottom h1 span {
+.bottom > h1 span {
     color: hsl(277, 64%, 61%);
 }
 
-.bottom p {
+.bottom > p {
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 1.7em;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.12em;
     padding-left: 52px;
     padding-right: 52px;
 }
@@ -87,28 +87,28 @@ main {
     padding-bottom: 0px;
 }
 
-.stats h2 {
+.stats > p {
     color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     gap: 10.67px;
     font-weight: 700;
-    font-size: 29px;
+    font-size: 1.8em;
 }
 
-.stats h2 span {
+.stats > p span {
     color: hsla(0, 0%, 100%, 0.6);
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 0.6em;
 }
 
-@media only screen and (min-width: 641px) and (max-width: 768px) {
+/* @media only screen and (min-width: 641px) and (max-width: 768px) {
     .card {max-width: 600px;}
-}
+} */
 
 @media only screen and (min-width: 700px) {
-    .card {max-width: 1440px;
+     .card {/*max-width: 1440px; */
             width: 1003.97px;
             height: 402.05px;
             display: flex;
@@ -119,8 +119,6 @@ main {
         background-image: url(images/image-header-desktop.jpg);
         width: 488.45px;
         height: 402.05px;
-        /* width: 540px;
-        height: 450px; */
         border-radius: 0 10px 10px 0;
     }
 
@@ -133,18 +131,16 @@ main {
         padding-top: 70px;
     }
 
-    .bottom p {
-        font-size: 15px;
+    .bottom > p {
+        font-size: 0.98em;
         line-height: 1.5;
-    }
-
-    .bottom h1 {
         padding: 0;
     }
 
-    .bottom p {
+    .bottom > h1 {
         padding: 0;
     }
+
     
     .stats {
         display: flex;
@@ -152,12 +148,12 @@ main {
         gap: 59px;
     }
 
-    .stats h2 {
-        font-size: 22px;
-        gap: 8px;
+    .stats > p {
+        font-size: 1.5em;
+        gap: 5px;
     }
 
-    .stats h2 span {
-        font-size: 12px;
+    .stats > p span {
+        font-size: 0.54em;
     }
 }
